@@ -13,8 +13,5 @@
   </button>
 
   <!-- Second view lives in the modal component -->
-  <Modal bind:this={modal}>
-    <svelte:fragment slot="title">Hello World</svelte:fragment>
-    <p>Hello World</p>
-  </Modal>
+  <Modal bind:this={modal} />
 </main>
