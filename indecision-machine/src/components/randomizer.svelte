@@ -1,5 +1,18 @@
 <script>
-    export let decide = () => {}; // parent gives this
+    export let decide = () => {};
+    export let disabled = false; // disabled when empty or waiting
+    export let waiting = false; // show the thinking state
 </script>
 
-<button class="custom text-xl" on:click={decide}>🎰MAKE A CHOICE!🎰</button>
+<button
+    type="button"
+    class={waiting ? "custom animate-pulse" : "custom"}
+    on:click={decide}
+    {disabled}
+>
+    {#if waiting}
+        Thinking…
+    {:else}
+        🎰MAKE A CHOICE!🎰
+    {/if}
+</button>
