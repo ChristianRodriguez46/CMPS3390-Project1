@@ -126,7 +126,7 @@ This project helps developers rapidly create responsive, modular web interfaces 
 				</tr>
 			</thead>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/Documentation.md'>Documentation.md</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/Documentation.md'>Documentation.md</a></b></td>
 					<td style='padding: 8px;'>- The code file in question serves as a foundational component within the overall architecture, primarily responsible for facilitating environment setup and ensuring consistent prerequisites for development<br>- It provides essential guidance and configuration details that enable developers to establish a compatible Linux-based environment on Windows via WSL2, which is crucial for maintaining uniformity across the development workflow<br>- By defining the target environment and necessary tooling, this file helps streamline onboarding and supports the seamless integration of various tools like Node.js, thereby underpinning the stability and reliability of the entire codebase.</td>
 				</tr>
 			</table>
@@ -146,27 +146,27 @@ This project helps developers rapidly create responsive, modular web interfaces 
 				</tr>
 			</thead>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/Hello/svelte.config.js'>svelte.config.js</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/Hello/svelte.config.js'>svelte.config.js</a></b></td>
 					<td style='padding: 8px;'>- Configure Sveltes build process to utilize Vites preprocessing capabilities, enabling seamless integration of modern development features<br>- This setup ensures efficient compilation and preprocessing of Svelte components, supporting a smooth development experience within the overall project architecture<br>- It plays a crucial role in optimizing the build pipeline for faster development and deployment cycles.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/Hello/vite.config.js'>vite.config.js</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/Hello/vite.config.js'>vite.config.js</a></b></td>
 					<td style='padding: 8px;'>- Configures the development environment for the project by integrating Vite with Svelte<br>- It streamlines the build process, enabling efficient development and hot module replacement, which enhances the overall architectures responsiveness and modularity<br>- This setup ensures a smooth development experience tailored for a Svelte-based application within the larger project ecosystem.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/Hello/package.json'>package.json</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/Hello/package.json'>package.json</a></b></td>
 					<td style='padding: 8px;'>- Defines the project configuration and dependencies for a Svelte-based web application using Vite<br>- It manages development scripts for building, previewing, and running the app locally, ensuring a streamlined development workflow<br>- This setup facilitates rapid development and deployment of a modern, modular frontend interface within the overall architecture.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/Hello/jsconfig.json'>jsconfig.json</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/Hello/jsconfig.json'>jsconfig.json</a></b></td>
 					<td style='padding: 8px;'>- Defines TypeScript configuration for the project, ensuring seamless integration of JavaScript, Svelte, and JSON modules<br>- Facilitates accurate type checking, source mapping, and module resolution aligned with modern JavaScript standards<br>- Supports robust development and debugging workflows within the overall architecture, enhancing code quality and maintainability across the codebase.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/Hello/index.html'>index.html</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/Hello/index.html'>index.html</a></b></td>
 					<td style='padding: 8px;'>- Sets up the main entry point for the web application by defining the HTML structure and linking the primary JavaScript module<br>- It establishes the foundational layout and ensures the application loads correctly within the overall project architecture, serving as the initial interface that integrates the front-end components and scripts for user interaction.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/Hello/README.md'>README.md</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/Hello/README.md'>README.md</a></b></td>
 					<td style='padding: 8px;'>- Provides a foundational setup for developing Svelte applications with Vite, emphasizing ease of use, developer experience, and extensibility<br>- It facilitates rapid prototyping and local development, serving as a lightweight alternative to SvelteKit<br>- The structure supports future migration to more advanced frameworks while maintaining core functionalities like HMR and TypeScript integration.</td>
 				</tr>
 			</table>
@@ -184,15 +184,15 @@ This project helps developers rapidly create responsive, modular web interfaces 
 						</tr>
 					</thead>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/Hello/src/main.js'>main.js</a></b></td>
+							<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/Hello/src/main.js'>main.js</a></b></td>
 							<td style='padding: 8px;'>- Initialize and mount the main Svelte application within the project architecture, establishing the primary user interface by rendering the App component into the designated DOM element<br>- This setup serves as the entry point for the frontend, orchestrating the connection between the core application logic and the webpage, thereby enabling user interactions and dynamic content display.</td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/Hello/src/App.svelte'>App.svelte</a></b></td>
+							<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/Hello/src/App.svelte'>App.svelte</a></b></td>
 							<td style='padding: 8px;'>- Facilitates user interaction by providing a button that triggers the display of a modal dialog<br>- It integrates the modal component into the main application, enabling seamless opening and closing of overlay content<br>- This setup supports a dynamic, interactive user interface within the overall architecture, enhancing user engagement and modularity of dialog management.</td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/Hello/src/vite-env.d.ts'>vite-env.d.ts</a></b></td>
+							<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/Hello/src/vite-env.d.ts'>vite-env.d.ts</a></b></td>
 							<td style='padding: 8px;'>- Defines TypeScript type declarations for Svelte and Vite, ensuring proper type checking and integration within the development environment<br>- Supports seamless development by enabling accurate autocompletion and error detection, thereby enhancing overall project stability and developer productivity in the context of a Svelte and Vite-based web application.</td>
 						</tr>
 					</table>
@@ -210,7 +210,7 @@ This project helps developers rapidly create responsive, modular web interfaces 
 								</tr>
 							</thead>
 								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/Hello/src/lib/Modal.svelte'>Modal.svelte</a></b></td>
+									<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/Hello/src/lib/Modal.svelte'>Modal.svelte</a></b></td>
 									<td style='padding: 8px;'>- Provides a reusable modal dialog component for user interactions such as alerts and confirmations within the application<br>- Facilitates displaying, closing, and handling user clicks outside the modal content, ensuring a seamless and accessible user experience<br>- Integrates smoothly into the overall architecture by enabling consistent modal behavior across different parts of the project.</td>
 								</tr>
 							</table>
@@ -234,31 +234,31 @@ This project helps developers rapidly create responsive, modular web interfaces 
 				</tr>
 			</thead>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/indecision-machine/svelte.config.js'>svelte.config.js</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/indecision-machine/svelte.config.js'>svelte.config.js</a></b></td>
 					<td style='padding: 8px;'>- Defines the Svelte configuration for the project, integrating Vite preprocessing to streamline the build process<br>- It ensures that Svelte components are correctly preprocessed during development and production, facilitating efficient compilation and enhancing overall project performance within the architecture.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/indecision-machine/postcss.config.cjs'>postcss.config.cjs</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/indecision-machine/postcss.config.cjs'>postcss.config.cjs</a></b></td>
 					<td style='padding: 8px;'>- Configures PostCSS to integrate Tailwind CSS, enabling utility-first styling and the use of the @apply directive within the project<br>- Serves as a foundational styling setup that supports consistent, maintainable, and scalable CSS architecture across the entire codebase<br>- Facilitates seamless styling workflows aligned with Tailwinds framework, contributing to a cohesive user interface design.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/indecision-machine/vite.config.js'>vite.config.js</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/indecision-machine/vite.config.js'>vite.config.js</a></b></td>
 					<td style='padding: 8px;'>- Configures the development environment for the project by integrating Svelte and TailwindCSS with Vite<br>- It streamlines the build process, enabling efficient development and styling workflows within the overall architecture<br>- This setup ensures a smooth, modern frontend experience aligned with the projects goal of delivering a responsive, user-friendly application.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/indecision-machine/package.json'>package.json</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/indecision-machine/package.json'>package.json</a></b></td>
 					<td style='padding: 8px;'>- Defines the project configuration and dependencies for the indecision-machine application, establishing the build, development, and preview workflows<br>- It ensures the integration of Svelte and Tailwind CSS, facilitating a streamlined development environment for a web-based decision-making tool within a modular architecture.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/indecision-machine/jsconfig.json'>jsconfig.json</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/indecision-machine/jsconfig.json'>jsconfig.json</a></b></td>
 					<td style='padding: 8px;'>- Defines TypeScript configuration for the project, ensuring seamless integration of JavaScript, Svelte, and JSON modules<br>- Facilitates accurate type checking, source mapping, and module resolution aligned with modern JavaScript standards<br>- Supports robust development and debugging workflows within the overall architecture, enhancing code quality and maintainability across the codebase.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/indecision-machine/index.html'>index.html</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/indecision-machine/index.html'>index.html</a></b></td>
 					<td style='padding: 8px;'>- Sets up the main entry point for the Indecision Machine web application, establishing the HTML structure and linking essential resources<br>- It initializes the user interface by loading the primary JavaScript module, enabling interactive decision-making features within the app<br>- This file serves as the foundation for rendering and launching the applications core functionality.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/indecision-machine/README.md'>README.md</a></b></td>
+					<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/indecision-machine/README.md'>README.md</a></b></td>
 					<td style='padding: 8px;'>- Provides a foundational setup for developing Svelte applications with Vite, focusing on streamlined development experience, efficient hot module replacement, and TypeScript integration<br>- Serves as a lightweight template for building and customizing Svelte projects, with easy migration paths to SvelteKit if extended capabilities are needed<br>- Facilitates rapid onboarding and consistent project structure within the architecture.</td>
 				</tr>
 			</table>
@@ -276,15 +276,15 @@ This project helps developers rapidly create responsive, modular web interfaces 
 						</tr>
 					</thead>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/indecision-machine/src/main.js'>main.js</a></b></td>
+							<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/indecision-machine/src/main.js'>main.js</a></b></td>
 							<td style='padding: 8px;'>- Initialize and mount the main Svelte application within the project architecture, establishing the primary user interface entry point<br>- It connects the core App component to the DOM, enabling the rendering of the applications visual elements and facilitating user interaction as part of the overall system.</td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/indecision-machine/src/App.svelte'>App.svelte</a></b></td>
+							<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/indecision-machine/src/App.svelte'>App.svelte</a></b></td>
 							<td style='padding: 8px;'>- Implements an interactive decision-making interface that allows users to add, remove, and select options with adjustable weights<br>- Facilitates randomized choice selection based on weighted preferences, providing a seamless user experience for managing choices and generating decisions within the overall application architecture<br>- Enhances user engagement through dynamic list management and probabilistic outcomes.</td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/indecision-machine/src/vite-env.d.ts'>vite-env.d.ts</a></b></td>
+							<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/indecision-machine/src/vite-env.d.ts'>vite-env.d.ts</a></b></td>
 							<td style='padding: 8px;'>- Defines TypeScript type declarations for Svelte and Vite environments, ensuring seamless integration and type safety across the development setup<br>- Supports consistent development experience by enabling proper type recognition within the project, which is essential for maintaining robust, scalable architecture in the overall codebase.</td>
 						</tr>
 					</table>
@@ -302,11 +302,11 @@ This project helps developers rapidly create responsive, modular web interfaces 
 								</tr>
 							</thead>
 								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/indecision-machine/src/components/inputs.svelte'>inputs.svelte</a></b></td>
+									<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/indecision-machine/src/components/inputs.svelte'>inputs.svelte</a></b></td>
 									<td style='padding: 8px;'>- Facilitates user input for selecting options and assigning weights within the decision-making interface<br>- Enables adding and removing choices dynamically, supporting interactive adjustments to the list of options<br>- Integrates seamlessly into the overall architecture by providing a user-friendly component for capturing decision parameters, contributing to the machines ability to process and evaluate weighted options effectively.</td>
 								</tr>
 								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/indecision-machine/src/components/randomizer.svelte'>randomizer.svelte</a></b></td>
+									<td style='padding: 8px;'><b><a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/indecision-machine/src/components/randomizer.svelte'>randomizer.svelte</a></b></td>
 									<td style='padding: 8px;'>- Provides an interactive button component that enables users to trigger decision-making actions within the application<br>- It visually indicates when the system is processing or thinking, enhancing user engagement and clarity<br>- As part of the overall architecture, it facilitates user-driven randomness and choice selection, supporting the application's goal of delivering dynamic, decision-based interactions.</td>
 								</tr>
 							</table>
@@ -325,7 +325,7 @@ This project helps developers rapidly create responsive, modular web interfaces 
 ### 📋 Prerequisites
 
 This project requires the following dependencies:
-- **Look at setup:** <a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/master/Documentation.md'>Documentation.md</a>
+- **Look at setup:** <a href='https://github.com/ChristianRodriguez46/CMPS3390-Project1/blob/main/Documentation.md'>Documentation.md</a>
 - **Programming Languages used:** JavaScript, Svelte, Css, Html
 - **Package Manager:** Npm
 - **Version Control:** Git
