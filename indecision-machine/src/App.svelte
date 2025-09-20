@@ -1,89 +1,93 @@
 <script>
-  // Import components for buttons
+  // Import components files for buttons
   import Inputs from "./components/inputs.svelte";
   import Randomizer from "./components/randomizer.svelte";
 
-  /*Define variables*/
-
-  // handles Adding
-  let choices = []; // will become to dimensional [{id, choice}]
-  let id = 1;
-  let input = "";
-  let weight = 1;
+  /* ---------- State ---------- */
+  let choices = []; // { id, label, weight }
+  let id = 1; // incremental id
+  let input = ""; // bound to text input
+  let weight = 1; // bound to number input
 
   let choiceCount = [];
-  // Remove functionality variables
-  let selectedId = null; // <-- which item to removal
+  let selectedId = null;
+  let isWaiting = false;
+  let waitMs = 1200;
 
-  let isWaiting = false; // true while we wait
-  let waitMs = 1200; // delay in milliseconds (change if you want)
+  /* ---------- Helpers ---------- */
 
-  /*define functions*/
+  // make sure range is 1-10.
+  // - Empty/NaN → 1
+  // - <1 → 1
+  // - >10 → 10
+  const w10 = (n) => Math.min(10, Math.max(1, Math.floor(Number(n) || 1)));
 
+  // Keep the bound weight valid as the user types.
+  $: weight = w10(weight);
+
+  // Rebuild the expanded array of ids used for weighted random picking.
   function rebuildChoiceCount() {
-    // Start fresh each time
     choiceCount = [];
     for (const c of choices) {
-      // make sure weight is a positive integer (default 1)
-      // make sure minimum is at least 1
-      const times = Math.max(1, Math.floor(Number(c.weight) || 1));
-      for (let i = 0; i < times; i++) {
-        choiceCount.push(c.id); // duplicate id "weight" times
-      }
+      const times = w10(c.weight); // make sure each choice's weight is valid
+      for (let i = 0; i < times; i++) choiceCount.push(c.id);
     }
   }
 
+  // Add a new option with its weight (clamped).
   function addOption(label, w = 1) {
     const clean = (label ?? "").trim();
     if (!clean) return;
 
-    const safeW = Math.max(1, Math.floor(Number(w) || 1));
-
-    // now each choice stores its own weight
+    const safeW = w10(w); // enforce 1..10 here, too
     choices = choices.concat({ id: id++, label: clean, weight: safeW });
 
-    rebuildChoiceCount(); // keep the derived array in sync
+    rebuildChoiceCount();
     input = "";
     weight = 1;
   }
 
+  // Remove the currently selected option.
   function removeSelected() {
     if (selectedId === null) return;
     choices = choices.filter((c) => c.id !== selectedId);
     selectedId = null;
-    rebuildChoiceCount(); // keep derived array in sync
+    rebuildChoiceCount();
   }
 
+  // Pick a random choice using the weighted list.
   function decide() {
-    if (isWaiting) return; // ignore clicks while waiting
+    // Ignore clicks while waiting
+    if (isWaiting) return;
+
+    // If there are no choices, tell the user
     if (choiceCount.length === 0) {
       alert("No choices yet. Add something first!");
       return;
     }
 
-    isWaiting = true; // start waiting
+    isWaiting = true;
     setTimeout(() => {
       const pickedId =
         choiceCount[Math.floor(Math.random() * choiceCount.length)];
       const picked = choices.find((c) => c.id === pickedId);
       alert(`Your pick: ${picked.label}`);
-      isWaiting = false; // done waiting
+      isWaiting = false;
     }, waitMs);
   }
 
+  // Toggle selection of a row by id.
   function select(id) {
-    // click to select, click again to unselect (simple toggle)
     selectedId = selectedId === id ? null : id;
   }
 
-  /* reactive convenience flags (auto-update)
-
-    $: tells Svelte to update variables when it's conditions change
-    disableAdd is true when the input is empty and disableRemove is true when nothing is selected
-  */
+  // Reactive convenience flags (auto-update):
+  // - disable Add when input is empty
+  // - disable Remove when nothing is selected
+  // - only disable Randomizer while "waiting" (let decide() handle empty list)
   $: disableAdd = (input ?? "").trim() === "";
   $: disableRemove = selectedId === null;
-  $: disableRandomizer = isWaiting || choiceCount.length === 0;
+  $: disableRandomizer = isWaiting;
 </script>
 
 <main>
@@ -107,10 +111,9 @@
             <li class="border-b last:border-b-0">
               <button
                 type="button"
-                class="choices"
-                class:bg-blue-50={c.id === selectedId}
-                class:ring-1={c.id === selectedId}
-                class:ring-blue-300={c.id === selectedId}
+                class={c.id === selectedId
+                  ? "choices text-white bg-red-600 ring-2 ring-black"
+                  : "choices text-white bg-black/75"}
                 on:click={() => select(c.id)}
                 aria-pressed={c.id === selectedId}
               >

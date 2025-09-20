@@ -23,29 +23,33 @@
         <div id="Input-div">
             <div class="gap-1">
                 <label for="option" class="text-sm font-medium">Option:</label>
+                <!-- Choice input -->
                 <input
                     id="option"
                     type="text"
                     bind:value={option}
                     placeholder="Type a choice..."
-                    class="outline outline-1 outline-offset-1 rounded px-3 py-2 m-3 w-64 bg-gray-50"
+                    class="outline-1 outline-offset-1 rounded px-3 py-2 m-3 w-64 bg-gray-50"
                 />
             </div>
 
             <div class="gap-1">
                 <label for="weight" class="text-sm font-medium">Weight:</label>
+                <!-- Weight Input -->
                 <input
                     id="weight"
                     type="number"
                     bind:value={weight}
                     min="1"
                     max="10"
+                    step="1"
                     placeholder="Enter a weight...(1-10)"
-                    class="outline outline-1 outline-offset-1 rounded px-3 py-2 m-3 w-64 bg-gray-50"
+                    class="outline-1 outline-offset-1 rounded px-3 py-2 m-3 w-64 bg-gray-50"
                 />
             </div>
         </div>
 
+        <!-- Add button -->
         <button
             type="button"
             on:click={onAdd}
@@ -54,7 +58,7 @@
         >
             Add
         </button>
-
+        <!-- Remove button -->
         <button
             type="button"
             on:click={onRemove}
