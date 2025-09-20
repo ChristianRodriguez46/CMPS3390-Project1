@@ -749,20 +749,50 @@ Use the correct outline utilities:
 ```css
 @apply mt-5 mb-5 py-5 rounded-lg w-1/2 outline outline-1 outline-offset-1;
 ```
+<br><br>
+---
+---
 
-**A11y warnings when clicking `<li>`**
-Attach the handler to a real button and indicate pressed state:
+### Styling (Tailwind utilities and small `@apply`)
 
-```svelte
-<button
-                type="button"
-                class="w-1/2 text-left px-3 py-2 hover:bg-gray-50"
-                class:bg-blue-50={c.id === selectedId}
-                class:ring-1={c.id === selectedId}
-                class:ring-blue-300={c.id === selectedId}
-                on:click={() => select(c.id)}
-                aria-pressed={c.id === selectedId}
+**Global Tailwind import**
+
+```css
+@import "tailwindcss";
 ```
+
+I bring in Tailwind’s utilities once from `app.css`.
+
+**Reusable button style**
+
+```css
+button.custom {
+  @apply mt-5 mb-5 py-5 rounded-lg w-1/2 outline outline-1 outline-offset-1;
+}
+```
+
+I consolidate multiple utilities into a single class name with `@apply`.
+
+---
+
+### Mounting the App (Svelte 5)
+
+```js
+// Svelte 5 mount API
+import { mount } from 'svelte'
+import './app.css'
+import App from './App.svelte'
+mount(App, { target: document.getElementById('app') })
+```
+
+Svelte 5 mounts the root component with `mount(...)` instead of `new App(...)`. This is the first file I check when upgrading or debugging startup.
+
+<br>
+
+---
+---
+
+<br>
 
 **Randomizer disabled when empty or waiting**
 Parent controls disabled and waiting props:
@@ -827,42 +857,6 @@ Classes toggle based on selection.
 ```
 
 The modifier prevents the default submit, keeping the SPA experience.
-
----
-
-## Styling (Tailwind utilities and small `@apply`)
-
-**Global Tailwind import**
-
-```css
-@import "tailwindcss";
-```
-
-I bring in Tailwind’s utilities once from `app.css`.
-
-**Reusable button style**
-
-```css
-button.custom {
-  @apply mt-5 mb-5 py-5 rounded-lg w-1/2 outline outline-1 outline-offset-1;
-}
-```
-
-I consolidate multiple utilities into a single class name with `@apply`.
-
----
-
-## Mounting the App (Svelte 5)
-
-```js
-// Svelte 5 mount API
-import { mount } from 'svelte'
-import './app.css'
-import App from './App.svelte'
-mount(App, { target: document.getElementById('app') })
-```
-
-Svelte 5 mounts the root component with `mount(...)` instead of `new App(...)`. This is the first file I check when upgrading or debugging startup.
 
 ---
 
