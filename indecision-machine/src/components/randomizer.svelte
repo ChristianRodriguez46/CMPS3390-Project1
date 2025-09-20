@@ -6,7 +6,7 @@
 
 <button
     type="button"
-    class={waiting ? "custom animate-pulse" : "custom"}
+    class={waiting ? "custom animate-pulse" : "randomizer"}
     on:click={decide}
     {disabled}
 >
