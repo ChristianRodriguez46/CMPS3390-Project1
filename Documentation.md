@@ -25,7 +25,7 @@
   [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 
 * **Git** — version control
-  [https://git-scm.com](https://git-scm.com)
+  [https://git-scm.com](https://git-scm.com/downloads)
 
 * **Visual Studio Code (Windows)** — IDE
   [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
